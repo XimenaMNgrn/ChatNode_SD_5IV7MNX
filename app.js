@@ -8,8 +8,8 @@ var io = require('socket.io')(server);
 app.use(express.static('public'));
 server.listen(PORT, () => console.log('Servidor iniciado en puerto '+PORT));
 
-app.get('/', function (req, res) {
-  res.sendFile(__dirname + '/public/index.html');
+app.get('', function (req, res) {
+  res.sendFile(__dirname + 'public/index.html');
 });
 
 io.on('connection', function (socket) {
