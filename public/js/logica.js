@@ -1,6 +1,6 @@
 const PORT = process.env.PORT || 8000;
 // https://chatnode-ximena.herokuapp.com/
-var socket = io.connect(`http://208.39.138.12:{PORT}`);
+var socket = io.connect(`http://201.141.117.39:{PORT}`);
 
 var list = document.querySelector(`#not`)
 let mensaje = document.getElementById('mensaje');
