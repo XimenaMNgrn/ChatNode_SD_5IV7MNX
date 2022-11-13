@@ -1,4 +1,6 @@
-var socket = io.connect('http://208.39.138.12:8000');
+const PORT = process.env.PORT || 8000;
+
+var socket = io.connect('http://208.39.138.12:'+PORT);
 
 var list = document.querySelector(`#not`)
 let mensaje = document.getElementById('mensaje');
