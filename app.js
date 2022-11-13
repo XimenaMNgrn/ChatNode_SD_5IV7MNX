@@ -1,10 +1,12 @@
+const PORT = process.env.PORT || 8000;
+
 const express = require('express');
 var app = require('express')();
 var server = require('http').Server(app);
 var io = require('socket.io')(server);
 
 app.use(express.static('public'));
-server.listen(8000, () => console.log('Servidor iniciado en prueto 8000'));
+server.listen(PORT, () => console.log('Servidor iniciado en prueto '+PORT));
 
 app.get('/', function (req, res) {
   res.sendFile(__dirname + '/public/index.html');
