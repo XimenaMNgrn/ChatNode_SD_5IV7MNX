@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Socket Basico</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <header>
+      <div class="title"><h1>Chat Node JS</h1></div>
+      <div class="info">
+        <h2>Moreno Noguerón Ximena</h2>
+        <h4>Sistemas Distribuidos</h4>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="contenedorChat">
+
+        <div class="chat1">
+          <div class="avisos" id="avisos"></div>
+          <hr>
+          <div id="salida"></div>
+        </div>
+
+        <div class="noti">
+          <h3>Notificaciones: </h3><br>
+          <div class="notificaciones" id="notificaciones"></div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="form">
+      <input type="text" class="usuario" id="usuario" placeholder="Usuario" required>
+      <br>
+      <textarea class="mensaje" id="mensaje" placeholder="Mensaje" required></textarea>
+      <button class="botonEnvio" id="enviar">Enviar</button>
+    </div>
+    <!-- Endpoint para utilizar socket.io del lado del cliente, también es posible utilizar:
+          "http://localhost:8000/socket.io/socket.io.js" -->
+    <script src="js/socket.io.js"></script>
+    <script src="js/logica.js" charset="utf-8"></script>   
+    
+  </body>
+</html>

@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(217, 216, 224);
+    font-size: 1.2rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+}
+
+h1{
+    font-size: 2.5rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+h4{
+    font-size: 1rem;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    width: 93.5%;
+    height: auto;
+    margin-left: 1.5rem;
+}
+
+.title{
+    align-content: center;
+    padding: 1rem;
+}
+.info{
+    align-content: center;
+    padding: 1rem;
+}
+
+
+.container{
+    width: 93.5%;
+    height: 20rem;
+    max-height: 20rem;
+    margin-top: 1rem;
+
+    border: solid rgb(17, 17, 61);
+    border-radius: 8px;
+    background-color: rgb(214, 228, 229);
+
+    box-shadow: 0 0 0 0.3rem #aeb5dbb7;
+    margin-left: 1.5rem;
+}
+.contenedorChat{
+    display: flex;
+    flex-direction: row;
+}
+.chat1{
+    width: 70%;
+    height: 18rem;
+    padding: 1rem;
+    padding-left: 1rem;
+}
+#avisos{
+    height: 1rem;
+}
+#salida{
+    overflow-y: scroll;
+    height: 15.8rem;
+}
+
+.noti{
+    width: 30%;
+    height: 18rem;
+    padding: 1rem;
+    overflow-y: scroll;
+}
+
+
+.form{
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+}
+
+hr{
+    color: rgb(73, 113, 116);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+input{
+    background-color: rgb(247, 247, 233);
+    border-radius: 5px;
+}
+input:hover{
+    background-color: #aeb5dbb7;
+}
+input:focus{
+    border: solid 2px rgb(17, 17, 61);
+    background-color: rgb(214, 228, 229);
+}
+
+textarea{
+    width: 95%;
+    height: 3rem;
+    min-height: 3rem;
+    max-height: 5rem;
+    resize: vertical;
+    background-color: rgb(247, 247, 233);
+    border-radius: 5px;
+}
+textarea:hover{
+    background-color: #aeb5dbb7;
+}
+textarea:focus{
+    border: solid 2px rgb(17, 17, 61);
+    background-color: rgb(214, 228, 229);
+}
+
+.botonEnvio{
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    padding-top: 0.4rem;
+    padding-bottom: 0.4rem;
+
+    border-radius: 5px;
+    /* background-color: #aeb5dbb7;*/
+    background-color: rgb(17, 17, 61);
+    color: aliceblue;
+}
